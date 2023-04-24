@@ -1,0 +1,9 @@
+package creational_patterns.singleton;
+
+enum EnumSingleton {
+    INSTANCE,
+
+    public static void doSomething() {
+        // do something
+    }
+}
