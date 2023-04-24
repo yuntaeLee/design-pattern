@@ -1,4 +1,4 @@
-package creational_patterns;
+package creational_patterns.singleton;
 
 public class StaticBlockSingleton {
     
