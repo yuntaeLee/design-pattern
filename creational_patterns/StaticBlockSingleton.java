@@ -14,7 +14,7 @@ public class StaticBlockSingleton {
         }
     }
 
-    public StaticBlockSingleton getInstance() {
+    public static StaticBlockSingleton getInstance() {
         return instance;
     }
 }
