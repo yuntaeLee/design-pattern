@@ -20,13 +20,17 @@
 		- Eager initialization singleton 클래스의 인스턴스는 클래스 로딩 시 생성된다.
 		- Eager initialization의 단점은 클라이언트 응용 프로그램이 메서드를 사용하지 않는 경우에도 메서드가 생성된다는 점이다.
 		- 따라서, 클래스가 많은 리소스를 사용하지 않는 경우 사용할 수 있는 접근 방식이다.
-		- getInstance method의 예외 처리 옵션을 제공하지 않는다.
+		- 전역 엑세스 메서드의 예외 처리 옵션을 제공하지 않는다.
 	2. Static Block Singleton
 		- Static block singleton은 클래스의 인스턴스가 예외 처리 옵션은 제공하는 정적 블록에 생성된다는 점을 제외하면 즉시 초기화와 유사하다.
 		- Eager initialization와 Block intialization 모두 인스턴스가 사용되기 전에 인스턴스를 생성하므로 사용하기에 가장 좋은 방법은 아니다.
 	3. Lazy Initiallization Singleton
-		- Lazy initiallization singleton 패턴은 getInstance 메서드에서 인스턴스를 생성한다.
+		- Lazy initiallization singleton 패턴은 전역 액세스 메서드에서 인스턴스를 생성한다.
 		- 하지만, 다중 스레드 시스템에서 스레드가 동시에 조건 내에 있으면 서로 다른 스레드가 다른 인스턴스를 얻는 문제가 발생할 수 있다.
+	4. Thread Safe Singleton
+		- 스레드로부터 안전한 싱글톤 클래스를 만들기 위해선 전역 엑세스 메서드를 sychronized를 사용하여 동기화 하는 것이다.
+		- 하지만, synchronized를 사용하는 것은 비용이 많이 발생하고, 이로 인한 성능 저하 이슈도 발생할 수 있다.
+		- 따라서, Double Checked Locking 방식을 사용하여 메서드단에 synchronized를 사용하지 않고, 메서드 내부에서 사용하는 방법이 효율적이다.
 
 </details>
 </details>
