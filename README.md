@@ -16,7 +16,7 @@
 	- 클래스의 유일한 인스턴스인 동일한 클래스의 전용 정적 변수
 	- 클래스의 인스턴스를 반환하는 public static mehtod
 - 종류
-	1. [Eager Initialization Singleton](singleton/EagerInitializedSingleton.java)
+	1. [Eager Initialization Singleton](/blob/master/creational_patterns/singleton/BillPughSingleton.java)
 		- Eager initialization singleton 클래스의 인스턴스는 클래스 로딩 시 생성된다.
 		- Eager initialization의 단점은 클라이언트 응용 프로그램이 메서드를 사용하지 않는 경우에도 메서드가 생성된다는 점이다.
 		- 따라서, 클래스가 많은 리소스를 사용하지 않는 경우 사용할 수 있는 접근 방식이다.
