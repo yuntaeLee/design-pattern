@@ -6,7 +6,7 @@
 <details>
 <summary> <strong> 1-1. Singleton Pattern </strong> </summary>
 
-- 원리
+- 설명
 	- Singleton pattern은 클래스의 인스턴스화를 제한하고 Java Virtual Machine(JVM)에 클래스의 인스턴스가 하나만 존재하도록 한다.
 	- Singleton 클래스는 클래스의 인스턴스를 가져오기 위해 전역 엑세스 지점을 제공해야 한다.
 	- Singleton pattern은 로깅, 드라이버 개체, 캐싱 및 스레드 풀에 사용된다.
@@ -50,7 +50,21 @@
 </details>
 
 <details>
-<summary> <strong> 1-2. Factory Pattern </strong> </summary>
-- 
+<summary> <strong>
+
+[1-2. Factory Pattern](https://github.com/yuntaeLee/design-patterns/tree/master/creational_patterns/factory) </strong> </summary>
+
+- 설명: [Factory Pattern](https://github.com/yuntaeLee/design-patterns/tree/master/creational_patterns/factory)을 활용하면 객체를 생성할 때 클래스의 종류를 명시하지 않고도 객체를 생성할 수 있다.
+
+- 장점:
+	1. Flexibility: 객체 생성에서 유연성을 제공한다. 팩토리 클래스를 변경함으로써 코드의 동작을 변경할 수 있다.
+	2. Encapsulation: 객체 생성을 캡슐화하여, 객체 생성의 복잡성을 클라이언트 코드에서 숨긴다.
+	3. Code Reusability: 객체 생성을 다른 코드와 분리하여 코드 재사용성을 높인다.
+	4. Reduced Coupling: 클라이언트 코드와 객체 생성 코드 간의 결합도를 낮춘다. 즉, 팩토리 클래스를 변경해도 클라이언트 코드에 영향을 미치지 않는다.
+
+- 단점:
+	1. Overhead: 추가적인 패토리 클래스를 생성해야 하므로 오버헤드가 발생할 수 있다.
+	2. Complexity: 복잡한 객체 생성 로직이나 다수의 argument를 가진 객체를 생성해야 하는 경우 코드에 복잡성을 높인다.
+	3. Lack of Transparency: 객체 생성을 담당하는 팩토리 클래스로부터 생성되는 클래스를 식별하기 어렵다.
 </details>
 </details>
