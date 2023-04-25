@@ -1,5 +1,5 @@
 # Design Patterns
-<code> <h2> 1. Creational Pattern </h2> </code>
+<h2> <strong> 1. Creational Pattern </strong> </h2>
 
 <details>
 <summary> <strong> 1-1. Singleton Pattern </strong> </summary>
