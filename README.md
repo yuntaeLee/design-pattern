@@ -1,10 +1,10 @@
 # Design Patterns
 
 <details>
-<summary> <code> 1. Creational Pattern(생성 패턴) </code> </summary>
+<summary> <code> 1. Creational Pattern </code> </summary>
 <br/>
 <details>
-<summary> <strong> 1-1. Singleton Pattern(싱글톤 패턴) </strong> </summary>
+<summary> <strong> 1-1. Singleton Pattern </strong> </summary>
 
 - 원리
 	- Singleton pattern은 클래스의 인스턴스화를 제한하고 Java Virtual Machine(JVM)에 클래스의 인스턴스가 하나만 존재하도록 한다.
@@ -47,5 +47,10 @@
 			- 위와 같은 문제가 발생할 가능성이 존재하기 때문에 volatile를 사용한다.
 	7. [Enum Singleton](https://github.com/yuntaeLee/design-patterns/blob/master/creational_patterns/singleton/EnumSingleton.java)
 		- Enum singleton은 [Reflection](https://github.com/yuntaeLee/design-patterns/blob/master/creational_patterns/singleton/ReflectionSingletonTest.java)에도 안전하다.
+</details>
+
+<details>
+<summary> <strong> 1-2. Factory Pattern </strong> </summary>
+- 
 </details>
 </details>
