@@ -32,8 +32,20 @@
 		- 하지만, synchronized를 사용하는 것은 비용이 많이 발생하고, 이로 인한 성능 저하 이슈도 발생할 수 있다.
 		- 따라서, Double checked locking 방식을 사용하여 메서드단에 synchronized를 사용하지 않고, 메서드 내부에서 사용하는 방법이 효율적이다.
 	5. [Bill Pugh Singleton](https://github.com/yuntaeLee/design-patterns/blob/master/creational_patterns/singleton/BillPughSingleton.java)
-		- Java complier의 최적화로 인해 다중 스레드 환경에서 Double checked locking 방식을 사용하더라도 Singleton이 보장되지 않을 수 있다. [관련자료 - University of Maryland](http://www.cs.umd.edu/~pugh/java/memoryModel/DoubleCheckedLocking.html, "University of Maryland - Double Checked Locking")
+		- Java complier의 최적화로 인해 다중 스레드 환경에서 [Double checked locking](https://github.com/yuntaeLee/design-patterns/blob/master/creational_patterns/singleton/ThreadSafeSingleton.java) 방식을 사용하더라도 Singleton이 보장되지 않을 수 있다.
+		[관련자료-University of Maryland](http://www.cs.umd.edu/~pugh/java/memoryModel/DoubleCheckedLocking.html, "University of Maryland - Double Checked Locking")
 		- SingletonHelper class는 메모리에 로드되지 않고, 전역 엑세스 메서드를 호출해야 class가 로드되어 싱클톤 클래스를 생성한다.
 		- 따라서, Bill pugh singleton 방식은 메모리 측면에서 효과적이며, 동기화가 필요하지 않기 때문에 보다 널리 사용된다.
+	6. [Reflection Resistanted Singleton](https://github.com/yuntaeLee/design-patterns/blob/master/creational_patterns/singleton/ReflectionSolveSingleton.java)
+		- 위의 모든 Singleton 패턴은 [Reflection](https://github.com/yuntaeLee/design-patterns/blob/master/creational_patterns/singleton/ReflectionSingletonTest.java)을 통해 파괴할 수 있다.
+		- 이 패턴의 경우 [Reflection](https://github.com/yuntaeLee/design-patterns/blob/master/creational_patterns/singleton/ReflectionSingletonTest.java)에 의해서도 파괴되지 않으며, 
+		[Double checked locking](https://github.com/yuntaeLee/design-patterns/blob/master/creational_patterns/singleton/ThreadSafeSingleton.java) 방식의 한계 또한 극복할 수 있다.
+		- 먼저, Default Constructor에서 전역 엑세스 메서드를 통한 instance 생성이 아닌 다른 방식의 instance 생성에 대한 접근을 막는다.
+		- 그리고, volatile 을 사용하여 CPU cache가 아닌 Main Memory에 instance를 저장하여 다중 스레드 환경에서도 Singleton을 유지할 수 있다.
+			- volatile을 사용하지 않을 경우 각 스레드의 성능상의 이슈로 cache에 변수의 복사본을 가질 수 있다.
+			- ex) 두개의 스레드 T1과 T2가 있고, 아직 instance 필드가 초기화 되지 않았으며, 두 스레드가 동시에 getInstance() 메서드를 엑세스 한다고 가정했을 때, T1이 먼저 instance를 할당 하고, T2는 null이 아니기에 스레드의 local cache에 instance 복사본이 존재하게 되면, T2는 이미 초기화되었다고 가정하고 해당 복사본은 instance로 반환한다.
+			- 위와 같은 문제가 발생할 가능성이 존재하기 때문에 volatile를 사용한다.
+	7. [Enum Singleton](https://github.com/yuntaeLee/design-patterns/blob/master/creational_patterns/singleton/EnumSingleton.java)
+		- Enum singleton은 [Reflection](https://github.com/yuntaeLee/design-patterns/blob/master/creational_patterns/singleton/ReflectionSingletonTest.java)에도 안전하다.
 </details>
 </details>
