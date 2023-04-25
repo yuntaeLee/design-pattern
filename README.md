@@ -63,3 +63,11 @@
 	2. Complexity: 복잡한 객체 생성 로직이나 다수의 argument를 가진 객체를 생성해야 하는 경우 코드에 복잡성을 높인다.
 	3. Lack of Transparency: 객체 생성을 담당하는 팩토리 클래스로부터 생성되는 클래스를 식별하기 어렵다.
 </details>
+
+<details>
+<summary> <strong>1-3. Abstract Factory Pattern</strong> </summary>
+
+- 설명: [Abstract Factory Pattern](https://github.com/yuntaeLee/design-patterns/tree/master/creational_patterns/factory)
+
+</details>
+
