@@ -59,7 +59,7 @@
 	4. Reduced Coupling: 클라이언트 코드와 객체 생성 코드 간의 결합도를 낮춘다. 즉, 팩토리 클래스를 변경해도 클라이언트 코드에 영향을 미치지 않는다.
 
 - 단점:
-	1. Overhead: 추가적인 패토리 클래스를 생성해야 하므로 오버헤드가 발생할 수 있다.
+	1. Overhead: 추가적인 팩토리 클래스를 생성해야 하므로 오버헤드가 발생할 수 있다.
 	2. Complexity: 복잡한 객체 생성 로직이나 다수의 argument를 가진 객체를 생성해야 하는 경우 코드에 복잡성을 높인다.
 	3. Lack of Transparency: 객체 생성을 담당하는 팩토리 클래스로부터 생성되는 클래스를 식별하기 어렵다.
 </details>
@@ -67,7 +67,17 @@
 <details>
 <summary> <strong>1-3. Abstract Factory Pattern</strong> </summary>
 
-- 설명: [Abstract Factory Pattern](https://github.com/yuntaeLee/design-patterns/tree/master/creational_patterns/factory)
+- 설명: [Abstract Factory Pattern](https://github.com/yuntaeLee/design-patterns/tree/master/creational_patterns/factory)은 입력에 따른 다른 하위 클래스를 if-else 또는 switch를 사용하는 [Factory Pattern](https://github.com/yuntaeLee/design-patterns/blob/master/creational_patterns/factory/ComputerFactory.java)과는 달리 각 하위 클래스에 대한 factory class를 갖는다. 또한 객체의 생성을 공통 interface로 제공하여 구체적인 타입과는 무관하게 객체를 생성할 수 있다.
+
+- 장점:
+	1. Abstraction: [Factory Pattern](https://github.com/yuntaeLee/design-patterns/tree/master/creational_patterns/factory)보다 높은 수준의 추상화를 제공하여 클라이언트가 구체적인 클래스를 알 필요 없이 객체를 생성할 수 있다.
+	2. Encapsulation: 객체 생성을 캡슐화하여, 객체 생성의 복잡성을 클라이언트 코드에서 숨긴다.
+	3. Flexibility: 객체 생성에서 유연성을 제공한다. 팩토리 클래스를 변경함으로써 코드의 동작을 변경할 수 있다.
+	4. Separation of Concerns: 객체 생성의 관심사를 코드의 나머지 부분과 분리하여 모듈화 및 재사용성을 높인다.
+
+- 단점:
+	1. Overhead, Complexity: Factory Class 자체와 이들이 의존하는 추상 클래스 및 인터페이스와 같은 추가 클래스 생성이 필요하기 때문에 이로인한 오버헤드와 코드 복잡성이 높아진다.
+	2. Limited Extensibility: 새로운 제품은 Abstract Factory가 생성할 수 있는 제품 집합에만 고정되어 있기 때문에, 만약 새로운 종류의 제품이 생기면 Abstract Factory의 구현을 변경해야 한다.
 
 </details>
 
