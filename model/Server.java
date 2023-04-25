@@ -1,6 +1,7 @@
-package creational_patterns.factory;
+package model;
 
 public class Server extends Computer {
+    
     private String cpu;
     private String ram;
     private String hdd;
