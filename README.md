@@ -50,9 +50,7 @@
 </details>
 
 <details>
-<summary> <strong>
-
-[1-2. Factory Pattern](https://github.com/yuntaeLee/design-patterns/tree/master/creational_patterns/factory) </strong> </summary>
+<summary> <strong>1-2. Factory Pattern</strong> </summary>
 
 - 설명: [Factory Pattern](https://github.com/yuntaeLee/design-patterns/tree/master/creational_patterns/factory)을 활용하면 객체를 생성할 때 클래스의 종류를 명시하지 않고도 객체를 생성할 수 있다.
 
