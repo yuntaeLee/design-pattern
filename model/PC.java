@@ -1,4 +1,4 @@
-package creational_patterns.factory;
+package model;
 
 public class PC extends Computer {
 

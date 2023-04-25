@@ -1,8 +1,8 @@
 package creational_patterns.factory;
 
-import creational_patterns.model.Computer;
-import creational_patterns.model.PC;
-import creational_patterns.model.Server;
+import model.Computer;
+import model.PC;
+import model.Server;
 
 public class ComputerFactory {
     
