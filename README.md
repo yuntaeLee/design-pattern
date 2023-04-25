@@ -1,8 +1,6 @@
 # Design Patterns
+<code> <h2> 1. Creational Pattern </h2> </code>
 
-<details>
-<summary> <code> 1. Creational Pattern </code> </summary>
-<br/>
 <details>
 <summary> <strong> 1-1. Singleton Pattern </strong> </summary>
 
@@ -64,5 +62,4 @@
 	1. Overhead: 추가적인 패토리 클래스를 생성해야 하므로 오버헤드가 발생할 수 있다.
 	2. Complexity: 복잡한 객체 생성 로직이나 다수의 argument를 가진 객체를 생성해야 하는 경우 코드에 복잡성을 높인다.
 	3. Lack of Transparency: 객체 생성을 담당하는 팩토리 클래스로부터 생성되는 클래스를 식별하기 어렵다.
-</details>
 </details>
