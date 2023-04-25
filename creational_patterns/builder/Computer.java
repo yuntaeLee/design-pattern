@@ -17,9 +17,25 @@ public class Computer {
         this.isBluetoothEnabled = builder.isBluetoothEnabled;
     }
 
+    public String getHdd() {
+        return hdd;
+    }
+
+    public String getRam() {
+        return ram;
+    }
+
+    public boolean isGraphicsCardEnabled() {
+        return isGraphicsCardEnabled;
+    }
+
+    public boolean isBluetoothEnabled() {
+        return isBluetoothEnabled;
+    }     
+
     @Override
     public String toString() {
-        return "HDD = " + hdd + ", RAM = " + ram + ", Graphics Card Enabled = " + isGraphicsCardEnabled + ", isBluetoothEnabled = " + isBluetoothEnabled;
+        return "HDD = " + getHdd() + ", RAM = " + getRam() + ", Graphics Card Enabled = " + isGraphicsCardEnabled() + ", isBluetoothEnabled = " + isBluetoothEnabled();
     }
 
     // Builder class
@@ -51,5 +67,5 @@ public class Computer {
         public Computer build() {
             return new Computer(this);
         }
-    }    
+    } 
 }
