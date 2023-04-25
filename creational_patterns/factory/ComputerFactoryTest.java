@@ -1,6 +1,8 @@
 package creational_patterns.factory;
 
-public class FactoryTest {
+import creational_patterns.model.Computer;
+
+public class ComputerFactoryTest {
     
     public static void main(String[] args) {
         Computer pc = ComputerFactory.getComputer("pc", "2.4 GHz", "16 GB", "512 GB");

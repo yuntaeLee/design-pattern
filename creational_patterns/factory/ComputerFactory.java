@@ -1,5 +1,9 @@
 package creational_patterns.factory;
 
+import creational_patterns.model.Computer;
+import creational_patterns.model.PC;
+import creational_patterns.model.Server;
+
 public class ComputerFactory {
     
     public static Computer getComputer(String type, String cpu, String ram, String hdd) {
