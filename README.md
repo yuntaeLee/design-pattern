@@ -81,3 +81,27 @@
 
 </details>
 
+<details>
+<summary> <strong>1-4. Builder Pattern</strong> </summary>
+
+- [Builder Pattern](https://github.com/yuntaeLee/design-patterns/tree/master/creational_patterns/builder)은 객체에 많은 속성이 포함되어 있을 경우 객체 생성에 대한 복잡성이 증가하게 되는데 객체의 구성을 표현에서 분리하고, 동일한 구성 프로세스가 다른 표현을 만들 수 있도록하여 객체 생성의 복잡성 문제를 해결하였다.
+
+- 구현:
+	- 먼저 static inner class를 만든 다음 외부 class의 모든 인수를 Builder class에 동일하게 구성한다.
+	- Builder class에는 필요한 모든 속성을 parameter로 포함하는 constructor를 만들어야 한다.
+	- Builder class에는 선택적 parameter를 설정하는 메서드가 있어야 하며 선택적 속성을 설정한 후 동일한 Builder 객체를 리턴해야 한다.
+	- 마지막 단계는 클라이언트 프로그램에 필요한 객체를 반환하는 build() 메서드를 구현한다. 이를 위해선 Builder class를 parameter로 사용하는 클래스의 private constructor가 존재해야 한다.
+
+- 장점: 
+	- Flexibility: 기본 코드를 수정하지 않고도 구성이 다른 객체를 유연하게 생성할 수 있다.
+	- Encapsulation:
+	- Readability:
+	- No need for a large number of constructors:
+
+- 단점:
+	- complexity:
+	- memory usage:
+	- performance: 
+	
+</details>
+
