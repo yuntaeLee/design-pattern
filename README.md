@@ -2,7 +2,7 @@
 <h2> <strong> 1. Creational Pattern </strong> </h2>
 
 <details>
-<summary> <strong> 1-1. Singleton Pattern </strong> </summary>
+<summary> <strong> 1-1. Singleton Patterns </strong> </summary>
 
 - 설명
 	- Singleton pattern은 클래스의 인스턴스화를 제한하고 Java Virtual Machine(JVM)에 클래스의 인스턴스가 하나만 존재하도록 한다.
@@ -105,7 +105,19 @@
 
 <details>
 <summary> <strong>1-4. Prototype Pattern</strong> </summary>
+
 - [Prototype Pattern](https://github.com/yuntaeLee/design-patterns/tree/master/creational_patterns/prototype)은 새로운 객체를 생성하는 대신 기존 객체를 복제하여 만들 수 있도록 하는 Design pattern이다.
-- Database에서 가져온 데이터를 여러 차례에 걸쳐 각기 다른 방식으로 수정해야하는 요구사항이 생겼다고 가정할 때, [Prototype Pattern](https://github.com/yuntaeLee/design-patterns/tree/master/creational_patterns/prototype)을 사용할 경우 수 차례 Database에서 데이터를 조회할 필요없이 
+
+- Database에서 가져온 데이터를 여러 차례에 걸쳐 각기 다른 방식으로 수정해야하는 요구사항이 생겼다고 가정할 때, [Prototype Pattern](https://github.com/yuntaeLee/design-patterns/tree/master/creational_patterns/prototype)을 사용할 경우 수 차례 Database에서 데이터를 조회할 필요없이 한번의 조회 후 객체를 clone하여 Database의 접근을 최소화할 수 있다는 장점이 있다.
+
+</details>
+
+<br/>
+
+<h2> <strong> 2. Structural Patterns </strong> </h2>
+
+<details>
+<summary> <strong>2-1. Adapter Pattern</strong> </summary>
+
 
 </details>
