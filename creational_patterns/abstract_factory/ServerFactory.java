@@ -1,7 +1,7 @@
 package creational_patterns.abstract_factory;
 
-import model.Computer;
-import model.Server;
+import creational_patterns.model.Computer;
+import creational_patterns.model.Server;
 
 public class ServerFactory implements ComputerAbstractFactory {
     

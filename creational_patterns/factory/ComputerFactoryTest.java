@@ -1,6 +1,6 @@
 package creational_patterns.factory;
 
-import model.Computer;
+import creational_patterns.model.Computer;
 
 public class ComputerFactoryTest {
     

@@ -1,4 +1,4 @@
-package model;
+package creational_patterns.model;
 
 public class Server extends Computer {
     

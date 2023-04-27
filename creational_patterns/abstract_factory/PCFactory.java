@@ -1,7 +1,7 @@
 package creational_patterns.abstract_factory;
 
-import model.Computer;
-import model.PC;
+import creational_patterns.model.Computer;
+import creational_patterns.model.PC;
 
 public class PCFactory implements ComputerAbstractFactory {
 
