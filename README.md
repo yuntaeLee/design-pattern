@@ -93,15 +93,19 @@
 	- 마지막 단계는 클라이언트 프로그램에 필요한 객체를 반환하는 build() 메서드를 구현한다. 이를 위해선 Builder class를 parameter로 사용하는 클래스의 private constructor가 존재해야 한다.
 
 - 장점: 
-	- Flexibility: 기본 코드를 수정하지 않고도 구성이 다른 객체를 유연하게 생성할 수 있다.
-	- Encapsulation:
-	- Readability:
-	- No need for a large number of constructors:
+	1. Flexibility: 기본 코드를 수정하지 않고도 구성이 다른 객체를 유연하게 생성할 수 있다.
+	2. Encapsulation: 객체의 구성 프로세스를 캡슐화하여 수정 및 유지 관리를 쉽게할 수 있다.
+	3. Readability: 구성 프로세스의 각 단계가 수행하는 작업을 명확하게 하여 코드의 가독성을 높인다.
 
 - 단점:
-	- complexity:
-	- memory usage:
-	- performance: 
-	
+	1. complexity: 추가 클래스 및 메서드들의 생성이 필요하므로 코드의 복잡성이 높아질 수 있다.
+	2. memory usage: 구성 프로세스 중에 여러 객체를 생성하므로 더 많은 메모리 사용량이 필요할 수 있다.
+
 </details>
 
+<details>
+<summary> <strong>1-4. Prototype Pattern</strong> </summary>
+- [Prototype Pattern](https://github.com/yuntaeLee/design-patterns/tree/master/creational_patterns/prototype)은 새로운 객체를 생성하는 대신 기존 객체를 복제하여 만들 수 있도록 하는 Design pattern이다.
+- Database에서 가져온 데이터를 여러 차례에 걸쳐 각기 다른 방식으로 수정해야하는 요구사항이 생겼다고 가정할 때, [Prototype Pattern](https://github.com/yuntaeLee/design-patterns/tree/master/creational_patterns/prototype)을 사용할 경우 수 차례 Database에서 데이터를 조회할 필요없이 
+
+</details>
