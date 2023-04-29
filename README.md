@@ -121,3 +121,36 @@
 
 
 </details>
+
+<details>
+<summary> <strong>2-2. Composite Pattern</strong> </summary>
+
+
+</details>
+
+<details>
+<summary> <strong>2-3. Proxy Pattern</strong> </summary>
+
+
+</details>
+
+<details>
+<summary> <strong>2-4. Flyweight Pattern</strong> </summary>
+
+
+</details>
+
+
+<h2> <strong> 3. Behavioral Patterns </strong> </h2>
+
+<details>
+<summary> <strong>3-1. Template Method Pattern</strong> </summary>
+
+
+</details>
+
+<details>
+<summary> <strong>3-2. Mediator Pattern</strong> </summary>
+
+
+</details>
