@@ -141,6 +141,25 @@
 </details>
 
 
+<details>
+<summary> <strong>2-5. Facade Pattern</strong> </summary>
+
+
+</details>
+
+
+<details>
+<summary> <strong>2-6. Bridge Pattern</strong> </summary>
+
+
+</details>
+
+<details>
+<summary> <strong>2-7. Decorator Pattern</strong> </summary>
+
+
+</details>
+
 <h2> <strong> 3. Behavioral Patterns </strong> </h2>
 
 <details>
