@@ -160,6 +160,8 @@
 
 </details>
 
+<br/>
+
 <h2> <strong> 3. Behavioral Patterns </strong> </h2>
 
 <details>
@@ -170,6 +172,19 @@
 
 <details>
 <summary> <strong>3-2. Mediator Pattern</strong> </summary>
+
+
+</details>
+
+<details>
+<summary> <strong>3-3. Chain of Responsibility Pattern</strong> </summary>
+
+
+</details>
+
+
+<details>
+<summary> <strong>3-4. Observer Pattern</strong> </summary>
 
 
 </details>
