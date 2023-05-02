@@ -195,3 +195,17 @@
 
 
 </details>
+
+
+<details>
+<summary> <strong>3-6. Command Pattern</strong> </summary>
+
+
+</details>
+
+
+<details>
+<summary> <strong>3-7. State Pattern</strong> </summary>
+
+
+</details>
