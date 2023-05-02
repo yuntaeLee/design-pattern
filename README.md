@@ -188,3 +188,10 @@
 
 
 </details>
+
+
+<details>
+<summary> <strong>3-5. Strategy Pattern</strong> </summary>
+
+
+</details>
