@@ -216,3 +216,10 @@
 
 
 </details>
+
+
+<details>
+<summary> <strong>3-9. Iterator Pattern</strong> </summary>
+
+
+</details>
