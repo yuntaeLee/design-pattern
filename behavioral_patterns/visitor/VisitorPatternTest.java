@@ -1,6 +1,6 @@
 package behavioral_patterns.visitor;
 
-public class VisitorTest {
+public class VisitorPatternTest {
     
     public static void main(String[] args) {
         ItemElement[] items = { new Book(20, "1234"), new Book(100, "5678"),
